@@ -1,0 +1,23 @@
+#output{
+
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: green;
+    /* z-index: 1000; */
+    /* background-size: cover; */
+    position: absolute;
+    top: 0px;
+}
+#third-main{
+
+    width: 700px;
+    height: 100px;
+    position: absolute;
+    top: 10vh;
+    left: 43vw;
+    padding: 30px;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
