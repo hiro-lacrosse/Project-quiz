@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylecf.css">
+    <title>Document</title>
+</head>
+<section id="second">
+<body>
+    <h1 id="second-cf">CELSIUS TO FAHRENHEIT & VICEVERSA</h1>
+    <div id="second-cfmain">
+        
+    Celsius : <input type="text" id="celsius" /><br>
+    Fahrenheit : <input type="text" id="Fahrenheit" /><br>
+
+    <button onclick="celsius();">Celsius</button>
+    <button onclick="Fahrenheit();">Fahrenheit</button>
+    <button onclick="Erase();">Erase</button>
+ 
+    <br>
+        <p id="second-text"> The Result from Celsius to Fahrenheit : 
+            <br>
+            <br>
+        <h1 id = "result"></h1>
+        <p> The Result Fahrenheit to Celsius : 
+            <br>
+            <br>
+        <h1 id = "result1"></h1>
+        
+    </p>
+    <script>
+  
+function celsius()
+   {
+
+   c = document.getElementById("celsius").value;
+   document.getElementById("result").innerHTML = ((c * 9/5)+32) ;
+
+ 
+  }
+
+function Fahrenheit()
+{
+    f = document.getElementById("Fahrenheit").value;
+   document.getElementById("result1").innerHTML = ((f -32)*5/9);
+}
+
+  function Erase()
+  {
+
+      
+  } 
+   
+
+
+
+
+    </script>
+  </div>
+</section>
+</body>
+</html>
