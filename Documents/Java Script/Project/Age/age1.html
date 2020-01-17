@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styleage.css">
+    <img src="image/studyhard.jpg" alt="imagerom" id="third-imgstudy">
+    <title>Document</title>
+</head>
+<section id="third">
+<body>
+    <h1 id="output"> HOW OLD ARE YOU?</h1>
+    <div id="third-main">
+    <button onclick="checkNumber();"> How old are you?</button>
+  
+    <script>
+   
+
+    function checkNumber(){
+    let num = Number(prompt("How old are you?"));
+    if (num<=20){
+        document.getElementById('output').innerHTML= "You need to study hard " ;
+       
+    }
+    else if(num<=30 && num>20)
+    {
+        document.getElementById('output').innerHTML= "Get Married" ;
+    }
+    else if(num<=40 && num>30){
+        document.getElementById('output').innerHTML= "Make a lot of money " ;
+    }
+    else if(num<=50 && num>40){
+        document.getElementById('output').innerHTML= "Be successful" ;
+    }
+    else{
+        document.getElementById('output').innerHTML= "Travel a lot" ;
+    }
+    
+    }
+ 
+    </script>
+      </div>
+</section>
+</body>
+</html>
