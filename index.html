@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="output"></h1>
+    <button onclick="Ask();">Number</button>
+    <script>
+        function Ask(){
+            var var1 = 1;
+            var var2 = 1;
+            var var3;
+
+            var num = prompt("Tell me a number?");
+
+            document.write(var1 + "<br />");
+            document.write(var2 + "<br />");
+            //i++ adding1 to i
+            for(var i = 2; i < num; i++){
+                var3 = var1 + var2;
+                var1 = var2;
+                var2 = var3;
+            document.write(var3 + "<br />");
+            }
+        }
+    </script>
+</body>
+</html>
