@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      1.First Number：<input
+        type="text"
+        id="form1"
+        placeholder="number"
+        value=""
+      />
+    </p>
+    <p>
+      2.Second Number：<input
+        type="text"
+        id="form2"
+        placeholder="number"
+        value=""
+      />
+    </p>
+    <button id="buttun1" onclick="Onclick1()">Calculate</button>
+
+    <h1 id="output" name="C"></h1>
+
+    <script>
+      var sum = 0;
+      var a;
+      var b;
+
+      function Onclick1() {
+        a = Number(document.getElementById("form1").value);
+        b = Number(document.getElementById("form2").value);
+
+        for (var i = a; i <= b; i++) {
+          sum = sum + i;
+        }
+        document.getElementById("output").innerHTML = sum;
+      }
+    </script>
+  </body>
+</html>
