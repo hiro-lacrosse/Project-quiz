@@ -86,21 +86,32 @@ function refresh_4() {
 };
 
 function Fibonacci(){
-    var num = parseInt(prompt("Tell me a number?"));
+    // var num = parseInt(prompt("Tell me a number?"));
+    // var var1 = 1;
+    // var var2 = 1;
+    // var var3; 
+
+    // document.write(var1 + "<br />");
+    // document.write(var2 + "<br />");
+
+    // for(var i = 2; i < num; i++){
+    //     var3 = var1 + var2;
+    //     var1 = var2;
+    //     var2 = var3;
+    //     document.write(var3 + "<br />");
     var var1 = 1;
     var var2 = 1;
-    var var3; 
-
-    document.write(var1 + "<br />");
-    document.write(var2 + "<br />");
-
+    var var3;
+    var num = prompt("Tell me a number?");
+    document.getElementById("output_fibonacci").innerHTML =  (var1 + ", ") + (var2 + ", ");
     for(var i = 2; i < num; i++){
         var3 = var1 + var2;
         var1 = var2;
         var2 = var3;
-        document.write(var3 + "<br />");
+        const html = document.getElementById("output_fibonacci").innerHTML ;
+        document.getElementById("output_fibonacci").innerHTML = html + var3 + ". ";
     }
-}
+};
 
 function refresh_5() {
     document.getElementById("output_fibonacci").innerHTML = " Say me another number one more time !";
