@@ -1,0 +1,371 @@
+/* =======================================
+>>>>>>>>>>>>>>>>>> RESET <<<<<<<<<<<<<<<<<
+========================================= */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+/* =======================================
+>>>>>>>>>>>>> GENERAL SETs <<<<<<<<<<<<<<<
+========================================= */
+
+html, body {
+    overflow: hidden; /* This function not permit you scroll the pages just when you click in link in menu. */
+    scroll-behavior: smooth;
+}
+
+#first{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+ #second, #third, #fourth, #fifth, #sixth, #seventh {
+    top:0px;  
+    width: 100vw;
+    height: 100vh;
+    position: relative;    
+    background-size: cover;
+}
+
+#top_left, #top_right, #bottom_left, #bottom_right {
+    width: 20vw;
+    margin: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#top_left {
+    left:0px;
+    top:0px;
+}
+
+#top_right {
+    right:0px;
+    top:0px;
+}
+#bottom_left {
+    left: 0px;
+    bottom:0px;
+}
+#bottom_right {
+    right: 0px;
+    bottom:0px;
+}
+
+.box_container_first, .box_container_second, .box_container_third, .box_container_fourth, .box_container_fifth, .box_container_sixth, .box_container_seventh {
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: auto; /* when you declare width and put height in automaticlly format the box size turn responsive. */
+    opacity: 80%;
+    display: block;
+    padding: 40px 0 40px 0;
+    position: absolute;
+    font-size: 1.3vw;
+    margin-top: 0px;
+    box-shadow: 0px 0px 7px 6px rgba(0,0,0,0.72);
+    margin-right: -50%;
+    border-radius: 5%; 
+    justify-content: center;
+    background-color: #5A4C9B;
+    transform: translate(-50%, -50%);
+}
+
+.box_container_first {
+    margin:30px;
+}
+
+a, li{
+    color:whitesmoke;
+    margin:auto;
+    list-style: none;
+    text-align: center;
+    margin-top:20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-decoration: none;
+}
+
+a li:hover {
+    cursor: pointer;
+    font-size:2em; 
+    transition: 0.3s;
+}
+
+img {
+    width: 9vw;
+    height: auto;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+img:hover {
+    width: 13vw;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 2.5vw;
+    margin-left: 1vw;                                 
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+h3 {
+    color:whitesmoke;
+    margin:auto;
+    list-style: none;
+    text-align: center;
+    margin-top:20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-decoration: none;
+}
+
+h3:hover {
+    cursor: pointer;
+    font-size:2em; 
+    transition: 0.3s;
+}
+
+input {
+    width: 8vw;
+    height: 3vh;
+    opacity: 90%;
+    margin-top: 0.5vh;
+    margin-left: 10px;
+    align-items: center;
+    border-radius: 5%;
+    justify-content: center;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+button {
+    width: 15vw;
+    height: 3vh;
+    margin: 20px 60px;
+    font-size:1.3vw;
+    box-shadow: 0px 0px 3px 3px rgb(255, 255, 255);
+    font-weight: bolder;
+    border-radius: 5%;
+    background-color: #FFC820;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.72);
+}
+
+ /* =======================================
+>>>> SETS BACKGROUND START HERE <<<<<<
+========================================= */
+
+#first, #second, #third, #fourth, #fifth, #sixth, #seventh {
+    background-color: #4A3F7F;
+}
+
+ /* =======================================
+>>>> FIRST SECTION START HERE <<<<<<
+========================================= */
+
+#title_quiz {
+    color: antiquewhite;
+    margin: auto;
+    padding: 10px;
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.box_container_text_block, .box_container_text_inline {
+    width: 40vw;
+    height: auto;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.72);
+    text-align: center;
+    border-radius: 25px;
+    background-color: whitesmoke;   
+}
+
+#output_name {
+    color: black;
+    font-size: 1.5em;
+    text-shadow: none;
+}
+
+.box_img {
+    margin:auto;
+    padding: 40px 0 10px 0;
+    text-align: center;
+}
+
+#avatar_home, #avatar_quiz {
+    width: 15vw;
+    height: auto;
+}
+
+ /* =======================================
+>>>> SECOND SECTION START HERE <<<<<<
+========================================= */
+
+.box_container_quiz {
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.box_button {
+    text-align: center;
+}
+
+.box_advice {
+    margin:1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.box_container_text_inline {
+    width: 30vw;
+    margin-left: 3vw;
+}
+
+#link {
+    margin: 0px;
+}
+
+ /* =======================================
+>>>> THIRD SECTION START HERE <<<<<<
+========================================= */
+
+.box_input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+    justify-content: center;
+}
+
+/* "box_advice" and "box_container_text_inline" is content inside second section too */
+
+ /* =======================================
+>>>> FOURTH SECTION START HERE <<<<<<
+========================================= */
+ /* =======================================
+>>>> FIFTH SECTION START HERE <<<<<<
+========================================= */
+ /* =======================================
+>>>> SIXTH SECTION START HERE <<<<<<
+========================================= */
+ /* =======================================
+>>>> SEVENTH SECTION START HERE <<<<<<
+========================================= */
+
+@media all and (max-width: 650px) {
+
+    .box_container_first {
+        width: 80%;
+        transform: translate(-60%, -50%);
+    }
+
+    .box_container_second, .box_container_third, .box_container_fourth, .box_container_fifth, .box_container_sixth, .box_container_seventh {
+        width: 80%;
+        padding: 40px 0 40px 0;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #top_left, #top_right, #bottom_left, #bottom_right {
+        margin: 10px;
+        width: 30vw;
+    }
+
+    #title_quiz {
+        font-size: 8vw;
+        padding-top: 120px;
+    }
+
+    .box_container_text_block, .box_container_text_inline {
+        width: 55vw;
+    }
+
+    #output_name {
+        font-size: 2.5em;
+    }
+
+    #avatar_home, #avatar_quiz {
+        width: 30vw;
+        height: auto;
+    }
+
+    a, li{
+        font-size: 2em;
+    }
+    
+    a li:hover {
+        font-size:3em; 
+    }
+
+    img {
+        width: 20vw;
+    }
+    
+    img:hover {
+        width: 30vw;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 4vw;
+        margin-left: 2vw;                                 
+   }
+
+    h2:first-child {
+        margin-left: 0px;
+    }
+
+    h3 {
+        font-size:3em; 
+        margin-top:30px;
+    }
+    
+    h3:hover {
+        font-size:6em; 
+    }
+    
+
+    input {
+        width: 12vw;
+        height: 2.5vh;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    button {
+        margin: 20px 10px;
+        width: 30vw;
+        font-size:2.5vw;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
