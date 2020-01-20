@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="./quiz.js"></script>
+    <title>Project-QUIZ</title>
+</head>
+<body>
+    <section id="first">
+            <h1 id="title_quiz">RAINCOUVER - QUIZ</h1>
+            <a href="#first"><img id="top_left" src="./images/Quiz_ballon.png" alt="Quiz_ballon"></a>
+            <a href="#first"><img id="top_right" src="./images/Quiz_ballon.png" alt="Quiz_ballon"></a>
+            <a href="#first"><img id="bottom_left" src="./images/Quiz_ballon.png" alt="Quiz_ballon"></a>
+            <a href="#first"><img id="bottom_right" src="./images/Quiz_ballon.png" alt="Quiz_ballon"></a>
+            <div class="box_container_first">
+                <div class="box_container_text_block">
+                    <h1 id="output_name">Hello!!!<br><br> I’m Mogo and I’m going to help you with that first time, but before let me ask you. <br><br> What’s your name?<br><br>Touch me for you answer!</h1>               
+                    <div class="box_img">
+                        <img id="avatar_home" onclick="Welcome();" src="./images/avatar_home.png" alt="">
+                    </div>             
+                </div>
+                <div class="button">
+                    <a href="#second"><li>Next ->></li></a>
+                </div> 
+            </div>
+     </section>
+    <!--===================-->
+    <!--#end first section#-->
+    <!--===================-->
+    <section id="second">
+             <div class="box_container_second">
+                <div class="box_container_quiz">
+                    <a id="link" href="#third"><img src="./images/quiz_1.png" alt="quiz_1"></a>
+                    <a id="link" href="#fourth"><img src="./images/quiz_2.png" alt="quiz_2"></a>
+                    <a id="link" href="#fifth"><img src="./images/quiz_3.png" alt="quiz_3"></a>
+                </div>
+                <div class="box_container_quiz">
+                    <a id="link" href="#sixth"><img src="./images/quiz_4.png" alt="quiz_4"></a>
+                    <a id="link" href="#seventh"><img src="./images/quiz_5.png" alt="quiz_5"></a>
+                </div>
+                <div class="box_advice">
+                    <div class="box_container_text_inline">
+                        <h1>Ok, to continue the game select one of the options above.</h1> 
+                    </div>
+                    <div class="img_avatar">
+                        <img id="avatar_quiz" src="./images/avatar_quiz.png" alt="">
+                    </div>  
+                </div> 
+            </div>
+    </section>
+    <!--===================-->
+    <!--#end second section#-->
+    <!--===================-->
+    <section id="third">
+            <div class="box_container_third">
+                <div class="box_input">
+                    <h2>Celsius :</h2>
+                    <input type="text" id="celsius" /><br>
+                    <h2>Fahrenheit:</h2><input type="text" id="Fahrenheit" /><br>
+                </div>
+                <div class="box_button">
+                    <button onclick="Celsius();">Celsius -> Fahrenheit</button>
+                    <button onclick="Fahrenheit();">Fahrenheit -> Celsius</button>
+                </div>
+                <div class="box_advice">
+                    <div class="box_container_text_inline">
+                        <h1 id="output_quiz">This game I goint to convert the tempartures.<br><br> First enter a temperature value for each unit and after choice one of options.</h1>
+                    </div>
+                    <div class="img_avatar">
+                        <img id="avatar_quiz" onclick="Clear();" src="./images/avatar_quiz.png" alt="">
+                    </div>  
+                </div> 
+                <div class="button">
+                    <h3 onclick="refresh_1();">Refresh!</h3>
+                    <a href="#second"><li>Select another game!</li></a>
+                </div> 
+            </div>
+     </section>
+    <!--===================-->
+    <!--#end third section#-->
+    <!--===================-->
+    <section id="fourth">
+            <div class="box_container_fourth">
+                <div class="box_container_text_block">
+                    <h1 id="output_askAge">Hi there!!!<br><br> Based on your age I can give you some advice, but first let me know your age. <br><br> How old are you?<br><br>Touch me for you answer!</h1>          
+                    <div class="box_img">
+                        <img id="avatar_quiz" onclick="askAge();" src="./images/avatar_quiz.png" alt="">
+                    </div>             
+                </div>
+                <div class="button">
+                    <h3 onclick="refresh_2();">Refresh!</h3>
+                    <a href="#second"><li>Select another game!</li></a>
+                </div> 
+            </div>
+    </section>
+    <!--===================-->
+    <!--#end fourth section#-->
+    <!--===================-->
+    <section id="fifth">
+            <div class="box_container_fifth">
+                <div class="box_input">
+                    <h2>Number 1 :</h2>
+                    <input type="text" id="number1">                   
+                    <h2>Number 2 :</h2>
+                    <input type="text" id="number2">                   
+                </div>
+                <div class="box_advice">
+                    <div class="box_container_text_inline">
+                        <h1 id="output">Hi there!!!<br><br>Base in two number I can sum and show you the sum from number1 until number2.<br><br> Please type the numbers first and touch me for you answer!.</h1>
+                    </div>
+                    <div class="img_avatar">
+                        <img id="avatar_quiz" onclick="Sum();" src="./images/avatar_quiz.png" alt="">
+                    </div>  
+                </div> 
+                <div class="button">
+                    <h3 onclick="refresh_3();">Refresh!</h3>
+                    <a href="#second"><li>Select another game!</li></a>
+                </div> 
+            </div>
+    </section>
+    <!--===================-->
+    <!--#end fifth section#-->
+    <!--===================-->
+    <section id="sixth">
+            <div class="box_container_sixth">
+                <div class="box_container_text_block">
+                    <h1 id="output_prime">Hi there!!!<br><br> Based in a number I can say if it's prime number or not. <br><br> Which number would you like to know?<br><br>Touch me for you answer!</h1>          
+                    <div class="box_img">
+                        <img id="avatar_quiz" onclick="prime();" src="./images/avatar_quiz.png" alt="">
+                    </div>             
+                </div>
+                <div class="button">
+                    <h3 onclick="refresh_4();">Refresh!</h3>
+                    <a href="#second"><li>Select another game!</li></a>
+                </div> 
+            </div>
+    </section>
+    <!--===================-->
+    <!--#end sixth section#-->
+    <!--===================-->
+    <section id="seventh">
+                <div class="box_container_seventh">
+                <div class="box_container_text_block">
+                    <h1 id="output_fibonacci">Hi there!!!<br><br> Based in a number I can show all the Fibonacci number up to "n" . <br><br> Which number would you like to know?<br><br>Touch me for you answer!</h1>          
+                    <div class="box_img">
+                        <img id="avatar_quiz" onclick="Fibonacci();" src="./images/avatar_quiz.png" alt="">
+                    </div>             
+                </div>
+                <div class="button">
+                    <h3 onclick="refresh_5();">Refresh!</h3>
+                    <a href="#second"><li>Select another game!</li></a>
+                </div> 
+            </div>
+    </section>
+</body>
+</html>
